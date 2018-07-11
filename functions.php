@@ -10,5 +10,9 @@ function enqueue_parent_styles() {
   function script_enqueueing() {
     wp_enqueue_script('nav-scripting-behaviour', get_stylesheet_directory_uri() . '/main.js', array( 'jquery' ));
   }
+  add_action( 'wp_enqueue_scripts', function() {
+    wp_dequeue_style( 'shapely-fonts', '//fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,700%7COpen+Sans:400,500,600' );
+  },
+  99 );
 
 ?>
