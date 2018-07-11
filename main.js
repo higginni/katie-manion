@@ -1,12 +1,12 @@
 jQuery(document).ready(function($) {
-  var navpos = $('#mainnav').offset();
-  $(window).scroll('scroll', function() {
+  var navpos = $("#mainnav").offset();
+  $(window).scroll("scroll", function() {
     if ($(window).scrollTop() > 0) {
-      $('#mainnav').addClass('navbar-fixed-top');
-      $('#topnav').removeClass('navbar-fixed-top');
+      $("#mainnav").addClass("navbar-fixed-top");
+      $("#topnav").removeClass("navbar-fixed-top");
     } else {
-      $('#topnav').addClass('navbar-fixed-top');
-      $('#mainnav').removeClass('navbar-fixed-top');
+      $("#topnav").addClass("navbar-fixed-top");
+      $("#mainnav").removeClass("navbar-fixed-top");
     }
   });
 });
@@ -23,7 +23,8 @@ jQuery(document).on("load", function($) {
           console.log("YEEEEE");
           $(this).fadeTo(500, max);
         }
-      } else { //object goes out of view (scrolling up)
+      } else {
+        //object goes out of view (scrolling up)
         if ($(this).css("opacity") >= max - threshold || pageLoad) {
           console.log("noooooo");
           $(this).fadeTo(500, min);
@@ -32,5 +33,7 @@ jQuery(document).on("load", function($) {
     });
   }
   fade(true); //fade elements on page-load
-  $(window).scroll(function() { fade(false); }); //fade elements on scroll
+  $(window).scroll(function() {
+    fade(false);
+  }); //fade elements on scroll
 });
