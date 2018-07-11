@@ -1,0 +1,260 @@
+section {
+  .cover {
+    &.fullscreen {
+      background: rgba(0, 0, 0, 0.4);
+      height: 100vh;
+      &.image-bg {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        h1 {
+          color: white !important;
+          font-family: "Courier";
+          white-space: nowrap;
+          overflow: hidden;
+          width: 100%;
+          margin: auto;
+          font-family: "Courier";
+          animation: type 4s steps(40, end);
+        }
+      }
+    }
+  }
+  &.about-title,
+  &.we-are,
+  &.millenials,
+  &.services {
+    padding: 192px 0 96px 0;
+    margin-top: 53px;
+    -moz-animation: showHide 2s ease-in alternate;
+    -webkit-animation: showHide 2s ease-in alternate;
+    -ms-animation: showHide 2s ease-in alternate;
+    -o-animation: showHide 2s ease-in alternate;
+    animation: showHide 2s ease-in alternate;
+    @include breakpoint(sm) {
+      padding: 45px 0 45px 0;
+      margin-top: 63px;
+    }
+    @include breakpoint(xs) {
+      padding: 45px 0 45px 0;
+      margin-top: 63px;
+    }
+    @include breakpoint(xxs) {
+      padding: 45px 0 45px 0;
+      margin-top: 63px;
+    }
+    .col-md-4 {
+      h3 {
+        font-size: 36px;
+        line-height: 40px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        font-weight: 100;
+        @include breakpoint(sm) {
+          text-align: center;
+        }
+        @include breakpoint(xs) {
+          text-align: center;
+        }
+        @include breakpoint(xxs) {
+          text-align: center;
+        }
+      }
+    }
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      line-height: 40px;
+      color: white;
+      font-weight: 100;
+      @include breakpoint(sm) {
+        text-align: center;
+      }
+      @include breakpoint(xs) {
+        text-align: center;
+      }
+      @include breakpoint(xxs) {
+        text-align: center;
+      }
+    }
+    h5 {
+      &.sub-copy {
+        color: red;
+      }
+    }
+  }
+  &.content-creators {
+    -moz-animation: showHide 2s ease-in alternate;
+    -webkit-animation: showHide 2s ease-in alternate;
+    -ms-animation: showHide 2s ease-in alternate;
+    -o-animation: showHide 2s ease-in alternate;
+    animation: showHide 2s ease-in alternate;
+    padding: 96px 0 96px 0;
+    @include breakpoint(sm) {
+      padding: 45px 0 45px 0;
+    }
+    @include breakpoint(xs) {
+      padding: 45px 0 45px 0;
+    }
+    @include breakpoint(xxs) {
+      padding: 45px 0 45px 0;
+    }
+    h4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      line-height: 40px;
+      color: white;
+      font-weight: 100;
+      @include breakpoint(sm) {
+        text-align: center;
+      }
+      @include breakpoint(xs) {
+        text-align: center;
+      }
+      @include breakpoint(xxs) {
+        text-align: center;
+      }
+    }
+    #millenial-button {
+      display: flex;
+      padding: 45px;
+      a {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        max-width: 200px;
+      }
+    }
+  }
+  &.secondary-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #fff;
+    padding: 96px 0 96px 0;
+  }
+}
+
+.contact-section {
+  background-color: black;
+  h1 {
+    font-size: 36px;
+    line-height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+  }
+  p {
+    &.mb64 {
+      font-size: 24px;
+      line-height: 30px;
+      color: white;
+      font-weight: 100;
+    }
+  }
+}
+
+
+/* services page */
+
+.page-id-223 {
+  img {
+    filter: grayscale(100%);
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 30px;
+    color: white;
+    transform-style: preserve-3d;
+    font-weight: 100;
+    @include breakpoint(sm) {
+      text-align: center;
+    }
+    @include breakpoint(xs) {
+      text-align: center;
+    }
+    @include breakpoint(xxs) {
+      text-align: center;
+    }
+  }
+  .services-details {
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      color: white;
+      transform-style: preserve-3d;
+      font-weight: 100;
+      @include breakpoint(sm) {
+        text-align: center;
+      }
+      @include breakpoint(xs) {
+        text-align: center;
+      }
+      @include breakpoint(xxs) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.blog-title {
+  font-size: 36px;
+  line-height: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  font-weight: 100;
+  padding: 96px 0;
+  @include breakpoint(sm) {
+    text-align: center;
+    padding: 45px 0;
+  }
+  @include breakpoint(xs) {
+    text-align: center;
+    padding: 45px 0;
+  }
+  @include breakpoint(xxs) {
+    text-align: center;
+    padding: 45px 0;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
+
+.page-id-223 section {
+  padding: 96px 0;
+  background-color: black;
+}

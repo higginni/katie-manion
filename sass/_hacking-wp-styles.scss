@@ -1,0 +1,58 @@
+#shapely_home_parallax-3 {
+  background-color: #000;
+  @include breakpoint(sm) {
+    padding: 45px 0 45px 0;
+  }
+  @include breakpoint(xs) {
+    padding: 45px 0 45px 0;
+  }
+  @include breakpoint(xxs) {
+    padding: 45px 0 45px 0;
+  }
+  .container {
+    .row {
+      &.align-children {
+        img {
+          border-radius: 20px;
+        }
+        h3 {
+          color: #fff;
+          font-size: 36px;
+          line-height: 40px;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 100;
+          padding: 40px;
+        }
+        .mb32 {
+          p {
+            text-align: left;
+            font-size: 24px;
+            line-height: 30px;
+            color: white;
+            font-weight: 100;
+            padding-bottom: 30px;
+          }
+        }
+        a {
+          display: inline-block;
+          position: relative;
+          transition-duration: 0.3s;
+          transition-property: transform;
+          -webkit-tap-highlight-color: rgba(255, 255, 255, 1) !important;
+          transform: translateZ(0);
+          box-shadow: 0 0 1px rgba(255, 255, 255, 1) !important;
+          &:hover {
+            transform: translateY(-5px);
+          }
+        }
+      }
+    }
+  }
+}
+
+#custom_html-11 {
+  padding: 96px 0;
+}

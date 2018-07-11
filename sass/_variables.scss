@@ -1,0 +1,67 @@
+/*********************
+COLORS
+*********************/
+
+
+/** Synopsys color palette */
+
+$syn-blue: #4C9EC9;
+$syn-goldenrod: #FCAF1A;
+$syn-purple: #80539C;
+$syn-white: #fff;
+$syn-orange: #E07C05;
+$syn-gray: #B1B3B3;
+$syn-gray-light: #CECBCB;
+
+/** Default colors */
+
+$blue: #316ACA;
+$blue-hover: #23527C;
+$gray: #2E3B4E;
+$black: #000000;
+$white: #FFFFFF;
+
+/*********************
+BREAKPOINTS
+*********************/
+
+@mixin breakpoint($class) {
+  @if $class==xxs {
+    @media (max-width: 479px) {
+      @content;
+    }
+  }
+  @else if $class==xs {
+    @media (min-width: 480px) and (max-width: 767px) {
+      @content;
+    }
+  }
+  @else if $class==sm {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  }
+  @else if $class==md {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+  @else if $class==lg {
+    @media (min-width: 1200px) and (max-width: 1399px) {
+      @content;
+    }
+  }
+  @else if $class==xl {
+    @media (min-width: 1400px) and (max-width: 1899px) {
+      @content;
+    }
+  }
+  @else if $class==xxl {
+    @media (min-width: 1900px) {
+      @content;
+    }
+  }
+  @else {
+    @warn "Breakpoint mixin supports: xxs, xs, sm, md, lg, xl, xxl";
+  }
+}

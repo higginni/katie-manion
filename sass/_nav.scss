@@ -1,0 +1,64 @@
+.main-navigation .menu {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+a,
+.image-bg a,
+.contact-section .social-icons li a,
+a:visited,
+.footer .footer-credits a,
+.post-content .post-meta li a,
+.post-content .shapely-category a,
+.module.widget-handle i {
+  color: white !important;
+}
+
+.nav-container {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  &.navbar-fixed-top {
+    background: linear-gradient(to left, rgba(251, 57, 88, 1), rgba(255, 200, 56, 1));
+    color: rgb(255, 255, 255) !important;
+    .menu {
+      li {
+        a {
+          color: rgb(255, 255, 255) !important;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  nav {
+    border-bottom: none;
+    &.main-navigation {
+      .menu {
+        li {
+          a {
+            color: rgba(255, 255, 255, 0.5) !important;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-container {
+    position: fixed;
+    z-index: 999999;
+  }
+}
+
+@media (max-width: 1023px) {
+  .nav-container {
+    position: absolute;
+    background: linear-gradient(to left, rgba(251, 57, 88, 1), rgba(255, 200, 56, 1));
+    z-index: 999999;
+  }
+}

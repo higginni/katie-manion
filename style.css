@@ -1,0 +1,158 @@
+/*
+ Theme Name:   Shapely Child Theme
+ description: >-
+   A child theme of the Shapely default WordPress theme
+ Author:       Nick Schäferhoff
+ Template:     shapely
+ Version:      1.0.0
+*/
+
+.about-title {
+  margin-top: 100px;
+  background-size: 100%;
+  background-position: center; // background-image: url('/wp-content/uploads/2018/05/C5F4202D-B6B6-4548-8DDA-B1A7336650DA-818x1024.jpg');
+}
+
+.small-screen.image-bg.p0 .top-parallax-section .mb32 p {
+  color: red;
+}
+
+.home footer {
+  display: none;
+}
+
+.footer-credits {
+  display: none;
+}
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 100%; //padding: 20px;
+  border-radius: 5px;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.cover p {
+  color: white;
+  margin-top: 30px;
+}
+
+.page-title-section {
+  display: none;
+}
+
+.shapely_home_parallax-5 {
+  background-color: none;
+}
+
+.box div {
+  padding-bottom: 40px;
+}
+
+.box {
+  width: 100vw;
+  height: 80vh;
+  border-radius: 0%;
+  box-shadow: 0 2px 30px rgba(black, .2);
+  background: black;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave {
+  opacity: .4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #0af;
+  width: 500px;
+  height: 500px;
+  margin-left: -250px;
+  margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 3000ms infinite linear;
+}
+
+.wave.-three {
+  animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: .1;
+  background: yellow;
+}
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+.title,
+.title-2,
+.title-3,
+.title-4 {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+}
+
+.title {
+  padding-top: 20px;
+}
+
+.title-2 {
+  padding-top: 40px;
+}
+
+.title-3 {
+  padding-top: 60px;
+}
+
+.title-4 {
+  padding-top: 80px;
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+}
+
+}
