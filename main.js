@@ -10,30 +10,16 @@ jQuery(document).ready(function($) {
     }
   });
 });
-jQuery(document).on("load", function($) {
-  function fade(pageLoad) {
-    var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-    var min = 0.3;
-    var max = 0.7;
-    var threshold = 0.01;
-    $("section").each(function() {
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-      if (objectBottom < windowBottom) {
-        if ($(this).css("opacity") <= min + threshold || pageLoad) {
-          console.log("YEEEEE");
-          $(this).fadeTo(500, max);
-        }
-      } else {
-        //object goes out of view (scrolling up)
-        if ($(this).css("opacity") >= max - threshold || pageLoad) {
-          console.log("noooooo");
-          $(this).fadeTo(500, min);
-        }
-      }
-    });
-  }
-  fade(true); //fade elements on page-load
-  $(window).scroll(function() {
-    fade(false);
-  }); //fade elements on scroll
+
+jQuery(document).ready(function($) {
+  var firstImage = $(".img-responsive").offset();
+  $(window).scroll("scroll", function() {
+    if ($(window).scrollTop() > 600 && $(window).scrollTop() < 1600) {
+      $(".img-responsive").addClass("fixed-image");
+      $("#topnav").removeClass("fixed-image");
+    } else {
+      $("#topnav").addClass("fixed-image");
+      $(".img-responsive").removeClass("fixed-image");
+    }
+  });
 });

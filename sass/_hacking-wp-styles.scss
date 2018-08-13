@@ -1,4 +1,6 @@
-#shapely_home_parallax-3 {
+#shapely_home_parallax-3,
+#shapely_home_parallax-12,
+#shapely_home_parallax-13 {
   background-color: #000;
   @include breakpoint(sm) {
     padding: 45px 0 45px 0;
@@ -14,6 +16,7 @@
       &.align-children {
         img {
           border-radius: 20px;
+          top: 50vh;
         }
         h3 {
           color: #fff;
