@@ -1,6 +1,8 @@
 #shapely_home_parallax-3,
 #shapely_home_parallax-12,
-#shapely_home_parallax-13 {
+#shapely_home_parallax-13,
+#shapely_home_parallax-15,
+#shapely_home_parallax-16 {
   background-color: #000;
   @include breakpoint(sm) {
     padding: 45px 0 45px 0;
@@ -16,7 +18,7 @@
       &.align-children {
         img {
           border-radius: 20px;
-          top: 50vh;
+          top: 200px;
         }
         h3 {
           color: #fff;
@@ -30,6 +32,8 @@
           padding: 40px;
         }
         .mb32 {
+          height: 489px;
+          margin-top: 200px;
           p {
             text-align: left;
             font-size: 24px;
@@ -58,4 +62,21 @@
 
 #custom_html-11 {
   padding: 96px 0;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 600px;
+  height: 125vh;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+  margin-bottom: 200px;
+  .img-responsive {
+    position: sticky;
+    top: 100px;
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+  }
 }

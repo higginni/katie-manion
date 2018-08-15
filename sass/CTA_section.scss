@@ -1,5 +1,30 @@
+.closing-tagline {
+  margin-bottom: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    .row {
+      h3 {
+        text-align: center;
+        margin: 50px;
+        font-size: 3vw;
+        font-weight: 300;
+        color: #808080;
+      }
+      h3:first-child {
+        text-align: center;
+        margin: 50px;
+        font-size: 3vw;
+        font-weight: 300;
+        color: #fff;
+      }
+    }
+  }
+}
+
 .CTA_section {
-  height: 100vh;
+  margin-bottom: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
