@@ -1,3 +1,145 @@
+#shapely_home_features-2 {
+  .fa {
+    color: #fff;
+  }
+  p {
+    display: none;
+  }
+  .three-icon-section {
+    h4 {
+      text-align: center;
+      color: #fff;
+      font-weight: 100;
+      line-height: 30px;
+    }
+  }
+}
+.homepage-hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: showHide;
+  animation-duration: 4s;
+
+  .container {
+    .row {
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 84px;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 65px;
+        line-height: 190px;
+        @include breakpoint(sm) {
+          letter-spacing: 1px;
+          line-height: 10px;
+          font-size: 34px;
+        }
+        @include breakpoint(xs) {
+          letter-spacing: 1px;
+          line-height: 10px;
+          font-size: 34px;
+        }
+        @include breakpoint(xxs) {
+          letter-spacing: 1px;
+          line-height: 10px;
+          font-size: 34px;
+        }
+      }
+      h2 {
+        color: #fff;
+        text-align: center;
+        font-size: 64px;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        line-height: 90px;
+        @include breakpoint(sm) {
+          letter-spacing: 1px;
+          line-height: 10px;
+          font-size: 34px;
+        }
+        @include breakpoint(xs) {
+          letter-spacing: 1px;
+          line-height: 10px;
+          font-size: 34px;
+        }
+        @include breakpoint(xxs) {
+          letter-spacing: 1px;
+          line-height: 10px;
+          font-size: 34px;
+        }
+      }
+    }
+  }
+}
+
+.about-subheader-poparebrand {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: showHide;
+  animation-duration: 4s;
+
+  .container {
+    .row {
+      .col-md-4 {
+        h4 {
+          color: #fff;
+          text-align: center;
+          font-size: 84px;
+          font-weight: 100;
+          text-transform: uppercase;
+          letter-spacing: 65px;
+          line-height: 190px;
+          @include breakpoint(sm) {
+            letter-spacing: 1px;
+            line-height: 10px;
+            font-size: 34px;
+          }
+          @include breakpoint(xs) {
+            letter-spacing: 1px;
+            line-height: 10px;
+            font-size: 34px;
+          }
+          @include breakpoint(xxs) {
+            letter-spacing: 1px;
+            line-height: 10px;
+            font-size: 34px;
+          }
+        }
+        h2 {
+          color: #fff;
+          text-align: center;
+          font-size: 64px;
+          font-weight: 100;
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          line-height: 90px;
+          @include breakpoint(sm) {
+            letter-spacing: 1px;
+            line-height: 10px;
+            font-size: 34px;
+          }
+          @include breakpoint(xs) {
+            letter-spacing: 1px;
+            line-height: 10px;
+            font-size: 34px;
+          }
+          @include breakpoint(xxs) {
+            letter-spacing: 1px;
+            line-height: 10px;
+            font-size: 34px;
+          }
+        }
+      }
+    }
+  }
+}
+
 section {
   .cover {
     &.fullscreen {
@@ -122,6 +264,25 @@ section {
         text-align: center;
       }
     }
+    h5 {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      line-height: 40px;
+      color: white;
+      font-weight: 100;
+      @include breakpoint(sm) {
+        text-align: center;
+      }
+      @include breakpoint(xs) {
+        text-align: center;
+      }
+      @include breakpoint(xxs) {
+        text-align: center;
+      }
+    }
     #millenial-button {
       display: flex;
       padding: 45px;
@@ -144,7 +305,13 @@ section {
 
 .contact-section {
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 !important;
   h1 {
+    margin: 150px auto 40px auto;
     font-size: 36px;
     line-height: 40px;
     color: white;

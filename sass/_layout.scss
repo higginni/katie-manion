@@ -249,12 +249,18 @@ input[type="email"],
 input[type="tel"] {
   background-color: black;
   border: 1px solid #5c616d;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
 }
 
 input[type="text"],
 textarea {
   background-color: black;
   border: 1px solid #5c616d;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
 }
 
 .widget.widget_search .search-form > input#s:hover,
@@ -288,7 +294,12 @@ input[type="tel"]:focus,
 }
 
 input:hover {
-  transition: all 0.2s ease-in-out;
+  // transition: all 0.5s ease-in-out;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .btn-filled,

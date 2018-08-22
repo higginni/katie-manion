@@ -1,0 +1,48 @@
+.closing-tagline {
+  margin-bottom: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    .row {
+      h3 {
+        text-align: center;
+        margin: 50px;
+        font-size: 3vw;
+        font-weight: 300;
+        color: #808080;
+      }
+      h3:first-child {
+        text-align: center;
+        margin: 50px;
+        font-size: 3vw;
+        font-weight: 300;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.CTA_section {
+  margin-bottom: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    .row {
+      .col-md-6 {
+        text-align: center;
+        h2 a {
+          color: #fff;
+          text-align: center;
+          font-weight: 100;
+          &:hover {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.5) !important;
+            transition: all 0.5s ease-in;
+          }
+        }
+      }
+    }
+  }
+}
