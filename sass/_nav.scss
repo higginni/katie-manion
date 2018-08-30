@@ -22,6 +22,16 @@ a:visited,
       .site-title {
         font-family: "Roboto", sans-serif !important;
         color: rgba(255, 255, 255, 0.8);
+        @include breakpoint(sm) {
+          font-size: 37px;
+        }
+        @include breakpoint(xs) {
+          font-size: 27px;
+        }
+        @include breakpoint(xxs) {
+          letter-spacing: 0px;
+          font-size: 20px;
+        }
         &:hover {
           color: rgba(255, 255, 255, 0.4);
         }
@@ -33,9 +43,9 @@ a:visited,
   }
   &.navbar-fixed-top {
     background: linear-gradient(
-      to left,
-      rgba(251, 57, 88, 1),
-      rgba(255, 200, 56, 1)
+      to bottom,
+      rgba(251, 57, 88, 1) 50%,
+      rgba(0, 0, 0, 1)
     );
     color: rgb(255, 255, 255) !important;
     .menu {
@@ -56,6 +66,18 @@ a:visited,
         li {
           a {
             color: rgba(255, 255, 255, 0.5) !important;
+            @include breakpoint(sm) {
+              font-size: 31px;
+              line-height: 58px;
+            }
+            @include breakpoint(xs) {
+              font-size: 22px;
+              line-height: 58px;
+            }
+            @include breakpoint(xxs) {
+              font-size: 18px;
+              padding-bottom: 10px;
+            }
             &:hover {
               text-decoration: none;
             }
@@ -77,10 +99,22 @@ a:visited,
   .nav-container {
     position: absolute;
     background: linear-gradient(
-      to left,
-      rgba(251, 57, 88, 1),
-      rgba(255, 200, 56, 1)
+      to bottom,
+      rgba(251, 57, 88, 1) 71%,
+      rgba(0, 0, 0, 1)
     );
     z-index: 999999;
+  }
+}
+
+.module.widget-handle i {
+  @include breakpoint(sm) {
+    font-size: 35px;
+  }
+  @include breakpoint(xs) {
+    font-size: 29px;
+  }
+  @include breakpoint(xxs) {
+    font-size: 16px;
   }
 }
