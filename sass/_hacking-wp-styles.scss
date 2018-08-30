@@ -35,6 +35,30 @@
         .mb32 {
           height: 489px;
           margin-top: 200px;
+          @include breakpoint(sm) {
+            margin-top: 50px;
+            height: auto;
+            margin-top: 0;
+          }
+          @include breakpoint(xs) {
+            height: auto;
+            margin-top: 0;
+          }
+          @include breakpoint(xxs) {
+            height: auto;
+            margin-top: 0;
+          }
+          .hide-mobile {
+            @include breakpoint(sm) {
+              display: none;
+            }
+            @include breakpoint(xs) {
+              display: none;
+            }
+            @include breakpoint(xxs) {
+              display: none;
+            }
+          }
           p {
             text-align: left;
             font-size: 24px;
@@ -42,6 +66,16 @@
             color: white;
             font-weight: 100;
             padding-bottom: 30px;
+            @include breakpoint(sm) {
+              font-size: 36px;
+              line-height: 44px;
+              color: white;
+              text-align: center;
+            }
+            @include breakpoint(xs) {
+            }
+            @include breakpoint(xxs) {
+            }
           }
         }
         a {
@@ -73,11 +107,57 @@
   margin-left: auto;
   margin-top: 60px;
   margin-bottom: 200px;
+  @include breakpoint(sm) {
+    height: 70vh;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: auto;
+    max-width: none;
+  }
+  @include breakpoint(xs) {
+    height: 70vh;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: auto;
+    max-width: none;
+  }
+  @include breakpoint(xxs) {
+    height: 70vh;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    width: auto;
+    max-width: none;
+  }
   .img-responsive {
     position: sticky;
     top: 100px;
     height: 400px;
     width: 500px;
     object-fit: cover;
+    @include breakpoint(sm) {
+      position: relative !important;
+      height: auto;
+      width: auto;
+      top: 0 !important;
+    }
+    @include breakpoint(xs) {
+      position: relative !important;
+      height: auto;
+      width: auto;
+      top: 0 !important;
+    }
+    @include breakpoint(xxs) {
+      position: relative !important;
+      height: auto;
+      width: auto;
+      top: 0 !important;
+    }
+  }
+}
+
+#shapely_home_parallax-16 {
+  border: 2px solid red;
+  @include breakpoint(xxs) {
+    display: none;
   }
 }
