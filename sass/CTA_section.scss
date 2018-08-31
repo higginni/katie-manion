@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 .closing-tagline {
   margin-bottom: 40vh;
   display: flex;
@@ -11,6 +13,17 @@
         font-size: 3vw;
         font-weight: 300;
         color: #808080;
+        @include breakpoint(sm) {
+          font-size: 20px;
+          font-size: 44px;
+          line-height: 55px;
+        }
+        @include breakpoint(xs) {
+          font-size: 20px;
+        }
+        @include breakpoint(xxs) {
+          font-size: 20px;
+        }
       }
       h3:first-child {
         text-align: center;
@@ -18,8 +31,31 @@
         font-size: 3vw;
         font-weight: 300;
         color: #fff;
+        @include breakpoint(sm) {
+          margin-top: 150px;
+          font-size: 20px;
+          font-size: 44px;
+          line-height: 55px;
+        }
+        @include breakpoint(xs) {
+          margin-top: 150px;
+          font-size: 20px;
+        }
+        @include breakpoint(xxs) {
+          margin-top: 150px;
+          font-size: 20px;
+        }
       }
     }
+  }
+  @include breakpoint(sm) {
+    margin-bottom: 20vh;
+  }
+  @include breakpoint(xs) {
+    margin-bottom: 30px;
+  }
+  @include breakpoint(xxs) {
+    margin-bottom: 0;
   }
 }
 
@@ -32,10 +68,22 @@
     .row {
       .col-md-6 {
         text-align: center;
+        @include breakpoint(xxs) {
+          border-bottom: 1px solid white;
+        }
         h2 a {
           color: #fff;
           text-align: center;
           font-weight: 100;
+          @include breakpoint(sm) {
+            font-size: 38px;
+          }
+          @include breakpoint(xs) {
+            font-size: 32px;
+          }
+          @include breakpoint(xxs) {
+            font-size: 38px;
+          }
           &:hover {
             text-decoration: none;
             color: rgba(255, 255, 255, 0.5) !important;
@@ -44,5 +92,14 @@
         }
       }
     }
+  }
+  @include breakpoint(sm) {
+    margin-bottom: 20vh;
+  }
+  @include breakpoint(xs) {
+    margin-bottom: 20vh;
+  }
+  @include breakpoint(xxs) {
+    margin-bottom: 20vh;
   }
 }

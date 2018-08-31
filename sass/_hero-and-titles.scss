@@ -21,6 +21,17 @@
   align-items: center;
   animation-name: showHide;
   animation-duration: 4s;
+  @include breakpoint(sm) {
+    height: 60vh;
+    margin: 80px auto;
+    padding: 55px;
+  }
+  @include breakpoint(xs) {
+    height: 100vh;
+  }
+  @include breakpoint(xxs) {
+    height: 100vh;
+  }
 
   .container {
     .row {
@@ -33,9 +44,9 @@
         letter-spacing: 65px;
         line-height: 190px;
         @include breakpoint(sm) {
-          letter-spacing: 1px;
-          line-height: 10px;
-          font-size: 34px;
+          letter-spacing: 36px;
+          line-height: 110px;
+          font-size: 90px;
         }
         @include breakpoint(xs) {
           letter-spacing: 1px;
