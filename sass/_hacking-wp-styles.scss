@@ -1,8 +1,9 @@
-#shapely_home_parallax-3,
+// #shapely_home_parallax-3,
 #shapely_home_parallax-12,
 #shapely_home_parallax-13,
 #shapely_home_parallax-15,
 #shapely_home_parallax-16,
+#shapely_home_parallax-3,
 #shapely_home_parallax-17 {
   background-color: #000;
   @include breakpoint(sm) {
@@ -36,9 +37,8 @@
           height: 489px;
           margin-top: 200px;
           @include breakpoint(sm) {
-            margin-top: 50px;
+            margin-top: 200px;
             height: auto;
-            margin-top: 0;
           }
           @include breakpoint(xs) {
             height: auto;
@@ -49,6 +49,13 @@
             margin-top: 0;
           }
           .hide-mobile {
+            p {
+              text-align: right;
+              font-size: 24px;
+              line-height: 30px;
+              color: white;
+              padding-bottom: 30px;
+            }
             @include breakpoint(sm) {
               display: none;
             }
@@ -98,7 +105,73 @@
 #custom_html-11 {
   padding: 96px 0;
 }
+#custom_html-22 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  h3 {
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: lighter;
+    @include breakpoint(sm) {
+      font-size: 30px;
+    }
+    @include breakpoint(xs) {
+      font-size: 30px;
+    }
+    @include breakpoint(xxs) {
+      font-size: 30px;
+    }
+  }
+}
+#custom_html-23 {
+  #myVideo {
+    position: static;
+    height: 110vh;
+    right: 0;
+    bottom: 0;
+    @include breakpoint(lg) {
+      height: auto;
+      width: 100%;
+    }
+    @include breakpoint(md) {
+      height: auto;
+      width: 100%;
+    }
+    @include breakpoint(sm) {
+      height: auto;
+      width: 100%;
+    }
+    @include breakpoint(xs) {
+      height: auto;
+      width: 100%;
+    }
+    @include breakpoint(xxs) {
+      height: auto;
+      width: 100%;
+    }
+  }
+  .content {
+    position: sticky;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    h2 {
+      color: #fb3958;
+      text-align: center;
+    }
+  }
+}
 
+.widget-title {
+  display: none !important;
+}
 #wrapper {
   width: 100%;
   max-width: 600px;
@@ -155,8 +228,8 @@
   }
 }
 
-#shapely_home_parallax-16 {
-  @include breakpoint(xxs) {
-    display: none;
-  }
-}
+// #shapely_home_parallax-16 {
+//   @include breakpoint(xxs) {
+//     display: none;
+//   }
+// }
